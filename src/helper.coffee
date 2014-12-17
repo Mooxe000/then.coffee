@@ -17,7 +17,7 @@ slice = (args, start) ->
   start = start or 0
   return []  if start >= args.length
   len = args.length
-  ret = Array len - start
+  ret = new Array len - start
   ret[len - start] = args[len]  while len-- > start
   ret
 
@@ -105,7 +105,7 @@ parallelNext = (cont, result, counter, i) ->
 # 将一组数据 `array` 分发给任务迭代函数 `iterator`
 # 并行执行，`cont` 处理最后结果
 each = (cont, array, iterator) ->
-  end = undefined
+  # end = undefined
   result = []
   counter = {}
   return cont errorify array, 'each'  unless isArray(array)
@@ -140,7 +140,7 @@ eachSeries = (cont, array, iterator) ->
       then carry
       else
         stack = maxTickDepth
-        run = defer
+        defer
     run cont, iterator, next, array[i], i, array
     return
 
@@ -154,7 +154,7 @@ eachSeries = (cont, array, iterator) ->
 # ## **parallel** 函数
 # 并行执行一组 `array` 任务，`cont` 处理最后结果
 parallel = (cont, array) ->
-  end = undefined
+  # end = undefined
   result = []
   counter = {}
 

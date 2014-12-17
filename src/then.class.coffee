@@ -2,7 +2,7 @@ class Thenjs
 
   constructor: (start, debug) ->
     self = @
-    cont = undefined
+    # cont = undefined
 
     # 已经 是 一个 Thenjs 对象 直接返回
     return start  if start instanceof Thenjs
