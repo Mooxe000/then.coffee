@@ -1,0 +1,50 @@
+{
+  "name": "then.coffee",
+  "version": "1.4.5",
+  "description": "then.coffee",
+  "main": "dist/then.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mooxe000/then.coffee.git"
+  },
+  "keywords": [
+    "coffee",
+    "promise",
+    "then",
+    "async",
+    "then.js",
+    "thenjs"
+  ],
+  "tags": [
+    "coffee",
+    "promise",
+    "then",
+    "async",
+    "then.js",
+    "thenjs"
+  ],
+  "authors": [
+    "Yan Qing <admin@zensh.com>"
+  ],
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/Mooxe000/then.coffee/issues"
+  },
+  "homepage": "https://github.com/Mooxe000/then.coffee",
+  "devDependencies": {
+    "coffee-script": "^1.8.0",
+    "del": "^1.1.0",
+    "gulp": "^3.8.10",
+    "gulp-beautify": "^1.1.1",
+    "gulp-coffee": "^2.2.0",
+    "gulp-concat": "^2.4.2",
+    "gulp-nodeunit": "0.0.5",
+    "gulp-order": "^1.1.1",
+    "gulp-tap": "^0.1.3",
+    "gulp-wrap": "^0.5.0",
+    "run-sequence": "^1.0.2"
+  }
+}

@@ -1,0 +1,9 @@
+# Created by .gitignore support plugin (hsz.mobi)
+
+.DS_Store
+.git
+.idea
+
+node_modules/
+dist
+
